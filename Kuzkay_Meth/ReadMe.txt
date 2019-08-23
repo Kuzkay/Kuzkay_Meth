@@ -4,6 +4,7 @@ Items db:
 -Acetone
 -Methlab
 -Lithium
+-Meth
 
 (You can use sql.sql file)
 

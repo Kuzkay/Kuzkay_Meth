@@ -9,7 +9,7 @@ AddEventHandler('esx_methcar:start', function()
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	
 	if xPlayer.getInventoryItem('acetone').count >= 5 and xPlayer.getInventoryItem('lithium').count >= 2 and xPlayer.getInventoryItem('methlab').count >= 1 then
-		if xPlayer.getInventoryItem('meth_pooch').count >= 30 then
+		if xPlayer.getInventoryItem('meth').count >= 30 then
 				TriggerClientEvent('esx_methcar:notify', _source, "~r~~h~You cant hold more meth")
 		else
 			TriggerClientEvent('esx_methcar:startprod', _source)
@@ -59,7 +59,7 @@ AddEventHandler('esx_methcar:finish', function(qualtiy)
 	print(qualtiy)
 	local rnd = math.random(-5, 5)
 	TriggerEvent('KLevels:addXP', _source, 20)
-	xPlayer.addInventoryItem('meth_pooch', math.floor(qualtiy / 2) + rnd)
+	xPlayer.addInventoryItem('meth', math.floor(qualtiy / 2) + rnd)
 	
 end)
 
