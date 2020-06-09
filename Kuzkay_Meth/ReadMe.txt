@@ -19,5 +19,4 @@ Feel free to upgrade this resource and change stuff up, if you want to publish i
 always link to the original resource and give me credit
 
 Twitter: @KuzkayDev
-Discord: Kuzkay#9999
 Youtube: Kuzkay
