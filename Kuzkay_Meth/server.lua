@@ -2,8 +2,6 @@ ESX = exports["es_extended"]:getSharedObject()
 
 print("Meth car got loaded, Made by Kuzkay")
 
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-
 RegisterServerEvent('esx_methcar:start')
 AddEventHandler('esx_methcar:start', function()
 	local _source = source
